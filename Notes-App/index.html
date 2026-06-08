@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 24px;
+            gap: 16px;
+        }
+
+        #btn {
+            padding: 10px;
+        }
+
+        #Notes {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: min(700px, 100%);
+        }
+
+        #Notes .note {
+            background-color: rgb(136, 255, 0);
+            border-radius: 3px;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Notion</h1>
+        <button id="btn" onclick="openDialouge()">Add Notes</button>
+    </div>
+    <div id="Notes">
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
