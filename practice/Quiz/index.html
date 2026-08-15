@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body style="align-items: center;">
+    <h1 style="text-align: center; text-decoration: underline;">Quiz</h1>
+
+    <button onclick="addQuestion()">Add Question</button>
+    <div id="quiz" style="background-color: bisque;">
+        <h3 id="question"></h3>
+
+        <button id="option1" type="submit"></button>
+        <br>
+        <button id="option2" type="submit"></button>
+        <br>
+        <button id="option3" type="submit"></button>
+        <br>
+        <button id="option4" type="submit"></button>
+    </div>
+
+    <button id="check" onclick="checkAnswer()">Check</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
