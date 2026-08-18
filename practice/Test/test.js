@@ -1,11 +1,3 @@
-const promise = new Promise((resolve,reject) => {
-    const isBoy = false
-
-    if(isBoy){
-        resolve("This is a boy")
-    }else{
-        reject("This is not a boy")
-    }
-});
-
-console.log(promise)
+fetch('https://www.youtube.com/watch?v=OFpqvaJ3QYg',{})
+.then(Response => console.log(response))
+.catch(Response => console.log(error))
