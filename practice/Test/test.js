@@ -1,14 +1,11 @@
-function demo1(callback) {
-    setTimeout(() => {
-        console.log("Demo 1 executed");
-        callback()
-    }, 2000)
-}
+const promise = new Promise((resolve,reject) => {
+    const isBoy = false
 
-function demo2(callback) {
-    setTimeout(() => {
-        console.log("Hii this is demo 2")
-    }, 1000)
-}
+    if(isBoy){
+        resolve("This is a boy")
+    }else{
+        reject("This is not a boy")
+    }
+});
 
-demo1(demo2)
+console.log(promise)
