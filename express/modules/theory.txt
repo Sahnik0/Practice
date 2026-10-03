@@ -1,0 +1,4 @@
+Every file in the express is a module that can be imported and used in other parts of the application. 
+Modules can contain functions, classes, or variables that encapsulate specific functionality.
+By organizing code into modules, developers can create reusable components, improve maintainability, 
+and enhance the overall structure of the application.
