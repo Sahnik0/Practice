@@ -6,8 +6,8 @@ const person = {
 }
 
 // Now access this object normally 
-const name = person.name
-console.log(name) //Will print Sahnik
+const personName = person.name
+console.log(personName) //Will print Sahnik
 
 
 
