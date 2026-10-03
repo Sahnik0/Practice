@@ -6,9 +6,9 @@ const preHeatOven = () => {
 
         setTimeout(() => {
             if(data){
-                resolve("Data is available at first")
+                resolve("1 Data is available at first")
             }else{
-                reject("Data not found at first")
+                reject("1 Data not found at first")
             }
         },5000)
         
@@ -21,9 +21,9 @@ const middleHeatOven = () => {
 
         setTimeout(() => {
             if(data){
-                resolve("Data is in the middle")
+                resolve("2 Data is in the middle")
             }else{
-                reject("Data is rejected")
+                reject("2 Data is rejected")
             }
         },100)
     })
@@ -36,14 +36,15 @@ const endHeatOven = () => {
 
         setTimeout(() => {
             if(data){
-                resolve("End of the data")
+                resolve("3 End of the data")
             }else{
-                reject("error in the end")
+                reject("3 error in the end")
             }
         },10)
     })
 }
 
+// Here it will execute one by one means without completing the first request it is not gonna move to the next. 
 const baking = async () => {
     const first = await preHeatOven();
     console.log(first)
