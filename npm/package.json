@@ -1,0 +1,13 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "This is a practice npm project",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

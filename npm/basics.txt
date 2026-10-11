@@ -1,0 +1,12 @@
+//Local dependency: use only in a pirticular project
+npm install <package_name>
+
+//Global dependency: use in any project
+npm install -g <package_name>
+
+//Basic commands
+npm init //initialize a new project
+npm install //install all dependencies listed in package.json
+
+//Dev dependency: use only in development environment
+npm install <package_name> --save-dev

@@ -1,4 +1,6 @@
 const {readFileSync,writeFileSync} = require('fs')
+//readFileSync is a synchronous method
+//readFile is asynchronous method
 
 const content = readFileSync('./express/testContents/test1.txt','utf-8')
 
