@@ -1,0 +1,11 @@
+All methods in Express:
+
+app.get()
+app.post()
+app.put()
+app.delete()
+app.patch()
+app.options()
+app.head()
+app.all()
+app.listen()
