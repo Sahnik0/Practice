@@ -32,8 +32,8 @@ jobs:
           set -euo pipefail
           export TZ=Asia/Kolkata
 
-          git config user.name  "YOUR_GITHUB_USERNAME"
-          git config user.email "YOUR_VERIFIED_EMAIL"
+          git config user.name  "Sahnik0"
+          git config user.email "sahnik.biswas@stu.adamasuniversity.ac.in"
 
           TODAY=$(date +%F)
           HOUR=$((10#$(date +%H)))
