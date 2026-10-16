@@ -9,3 +9,5 @@ app.options()
 app.head()
 app.all()
 app.listen()
+app.use() // This method is used to mount middleware functions at the specified path.
+          // It can be used to handle requests for all HTTP methods.
