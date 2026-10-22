@@ -1,0 +1,17 @@
+//Basic commands of code of redis
+
+set key value - Set the string value of a key
+get key - Get the value of a key
+del key - Delete a key
+exists key - Check if a key exists
+incr key - Increment the integer value of a key by one
+decr key - Decrement the integer value of a key by one
+expire key seconds - Set a timeout on a key
+ttl key - Get the time to live for a key
+
+//Grouping in redis
+
+set name:1 "Sahnik" - Set a value for a key with a specific name
+set name:2 "John" - Set a value for another key with a specific name
+get name:1 - Get the value of the key with name:1
+get name:2 - Get the value of the key with name:2
