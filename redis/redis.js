@@ -10,13 +10,15 @@ app.get('/',async(req,res)=>{
     const count = await redis.incr(key)
 
     if(count === 1){
-        await redis.expire(key,60)
+        await redis.expire(key,50)
         console.log("created")
-        return res.status(200).json({message: "in imit"})
+        return res.status(200).json({message: "in limit"})
     }
 
     if(count > 5){
         return res.status(429).json({message: "Too many message"})
+    }else{
+        return res.status(200).json({message: "in limit"})
     }
     
 })
