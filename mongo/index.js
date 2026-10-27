@@ -28,5 +28,14 @@ app.post('/api/user',async (req,res)=>{
     }
 })
 
+app.get('/api/fetch-data',async (req,res)=>{
+    try{
+        const users = await User.find()
+        res.json(users)
+    }catch(err){
+        res.status(404).json({message: "Mongo error"})
+    }
+})
+
 app.listen(5000)
 
