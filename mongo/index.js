@@ -14,7 +14,7 @@ async function mongo() {
     }
 }
 mongo()
-
+//POST
 app.post('/api/user',async (req,res)=>{
     try{
         const user = await User.create({
@@ -27,7 +27,7 @@ app.post('/api/user',async (req,res)=>{
         res.status(400).json({message: "Error while creating user", err})
     }
 })
-
+//GET
 app.get('/api/fetch-data',async (req,res)=>{
     try{
         const users = await User.find()
@@ -36,6 +36,30 @@ app.get('/api/fetch-data',async (req,res)=>{
         res.status(404).json({message: "Mongo error"})
     }
 })
+//DELETE
+app.delete('/users/delete', async (req, res) => {
+    try {
+        const user = await User.findOneAndDelete({
+            email: req.query.email
+        });
+
+        //const user = await User.findByIdAndDelete(req.params.id);
+        
+        if (!user) {
+            return res.status(404).json({
+                message: 'User not found'
+            });
+        }
+
+        return res.json({
+            message: 'User deleted successfully',
+            user
+        });
+
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
 
 app.listen(5000)
 
