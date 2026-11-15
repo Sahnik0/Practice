@@ -1,0 +1,11 @@
+Client Request 
+     ⬇️
+1. Routes        ("The Host / Menu" — directs request to the right place)
+     ⬇️
+2. Middleware    ("The Security / Bouncer" — checks, validates, or blocks before proceeding)
+     ⬇️
+3. Controller    ("The Waiter" — receives order, orchestrates kitchen, serves response)
+     ⬇️
+4. Services/Lib  ("The Kitchen Chefs / Tools" — doing the heavy calculations, hashing, external APIs)
+     ⬇️
+5. Models        ("The Pantry / Storage" — database schemas and data shape)
