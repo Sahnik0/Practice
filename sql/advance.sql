@@ -40,4 +40,3 @@ VALUE(1111,4.55)
 
 INSERT INTO transactions(amount) /*Specifically inserting value in the ammount*/
 VALUES(6.00);
-
