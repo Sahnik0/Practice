@@ -1,0 +1,11 @@
+//End to end tests
+Broad tests that simulate user behavior and interactions with the application. 
+
+//Integration tests
+Test how different parts of the application work together.
+
+//Unit tests
+Test individual functions or components in isolation.
+
+//Test suites
+Group of related tests for a single function/module
