@@ -1,0 +1,8 @@
+V=1.49.1   # use the exact version printed above
+
+docker pull mcr.microsoft.com/playwright:v$V-noble
+
+docker run -d --name pw-server --restart unless-stopped --init --ipc=host \
+  -p 3000:3000 --workdir /home/pwuser --user pwuser \
+  mcr.microsoft.com/playwright:v$V-noble \
+  /bin/sh -c "npx -y playwright@$V run-server --port 3000 --host 0.0.0.0"

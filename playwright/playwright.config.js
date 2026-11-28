@@ -45,13 +45,16 @@ export default defineConfig({
       use: { ...devices['Desktop Firefox'] },
     },
 
-    // WebKit's Ubuntu 24.04 fallback build requires libicu74, libxml2.so.2, libjxl.so.0.8,
-    // and libbacktrace.so.0, which are not available natively on Arch/Omarchy (ICU 78 / libxml2.so.16).
-    // Run WebKit in the official Playwright Docker container if Safari/WebKit testing is needed.
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+    {
+      name: 'webkit',
+      use: {
+    ...devices['Desktop Safari'],
+    connectOptions: {
+      wsEndpoint: 'ws://localhost:3000/',
+      exposeNetwork: '<loopback>',
+    },
+  },
+    },
 
     /* Test against mobile viewports. */
     // {

@@ -11,5 +11,8 @@
   "devDependencies": {
     "@playwright/test": "^1.65.1",
     "@types/node": "^26.6.11"
+  },
+  "dependencies": {
+    "npx": "^10.2.2"
   }
 }
